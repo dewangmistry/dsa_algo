@@ -17,6 +17,9 @@ class Stack:
         """
         Pop value from stack
         """
+        if len(self.container) == 0:
+            return
+
         return self.container.pop()
     
     def peek(self):
